@@ -1,0 +1,362 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #667;
+    background: #fff;
+
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+    /*site-nav start*/
+
+    #hide1{
+        position: absolute;
+    }
+        .site-nav{
+        height:20px;
+
+        background-color: lightgoldenrodyellow;
+
+    }
+    .site-nav-send,
+    .site-nav-r .fore{
+        padding:0 26px 0 25px;
+        position: relative;
+
+    }
+    .site-nav-send:hover{
+       background-color: blanchedalmond;
+
+    }
+    .site-nav-send i,
+    .fore i{
+        position: absolute;
+        top:8px;
+        right: 8px;
+        width: 15px;
+        height:7px;
+        overflow: hidden;
+    }
+    .site-nav-send s,
+    .fore s{
+        font: 400 13px/15px "consolas";
+        position: relative;
+        top: -8px;
+
+    }
+    .site-nav-r li{
+        padding: 0 10px;
+        float: left;
+    }
+    .site-nav-r .line{
+        width: 1px;
+        height: 12px;
+        background-color: #666677;
+        padding: 0px;
+        margin-top:4px; ;
+    }
+    .site-nav-r .jd-tel {
+    padding-left: 25px;
+
+    }
+    .jd-tel span {
+        position: absolute;
+        width: 15px;
+        height: 20px;
+        top: 0px;
+        left:5px;
+        background: url("../images/images/tel.png") no-repeat;
+
+    }
+    /*site-nav end*/
+
+    /*topbanner star*/
+    .top-banner{
+        background-color:#004C8D;
+    }
+    .close-banner{
+        position: absolute;
+        right:27px;
+        top:4px;
+        width:19px;
+        height: 19px;
+        background: url("../images/images/close-banner.png")no-repeat;
+
+    }
+    .tb{
+        position: relative;
+    }
+    .close-banner:hover{
+        background-position: bottom;
+    }
+/*topbanner end*/
+
+
+/*search star*/
+.search-logo {
+    width: 362px;
+    height: 60px;
+    padding: 20px 0;
+    float: left;
+}
+.search-logo a {
+    float: left;
+    height: 60px;
+    width: 270px;
+    text-indent:-5000px;
+    background: url("../images/images/logo.png") no-repeat;
+}
+.search-input {
+    float: left;
+    width: 538px;
+    height: 36px;
+
+    padding-top: 25px;
+}
+.search-input input {
+    padding-left:5px;
+    float: left;
+    color: #cccccc;
+    width: 449px;
+    height: 32px;
+    border: 2px solid #004C8D;
+    border-right:0;
+}
+.search-input button {
+    float: left;
+    height: 36px;
+    width: 82px;
+    background-color: #004C8D;
+    color: #fff;
+    font: 400 16px/36px "microsoft yahei";
+    cursor: pointer;
+}
+.search-car {
+    float: right;
+    width: 139px;
+    height: 34px;
+    text-align: center;
+    position: relative;
+    line-height: 34px;
+    margin: 25px 65px 0 0;
+    background-color: #F9F9F9;
+    border: 1px solid #ddd;
+}
+.search-car-gwc {
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    top: 9px;
+    left: 18px;
+    background: url("../images/images/tel.png") no-repeat 0 -58px;
+}
+.search-car-jt {
+    position: absolute;
+    font: 400 13px/34px "simsun";
+    right: 10px;
+}
+.search-car-mag{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 7px 7px 7px 0;
+    top: -8px;
+    right: 30px;
+    background: #c00;
+    color: #fff;
+    line-height: 15px;
+    text-align: center;
+}
+.search-moreAlink {
+    float: left;
+    width: 530px;
+    height: 28px;
+    line-height: 28px;
+}
+.search-moreAlink a {
+    margin-right: 8px;
+}
+/*search end*/
+
+/*footer star*/
+.footer-top-slogen {
+    width: 100%;
+    height: 54px;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 16px;
+    background-color: #F5F5F5;
+}
+.footer-top-slogen-icon {
+    position: absolute;
+    /*top: 20px;*/
+    left: 50%;
+}
+.footer-top-slogen-icon1 {
+    margin-left: -604px;
+}
+.footer-top-slogen-icon2 {
+    margin-left: -302px;
+}
+.footer-top-slogen-icon4 {
+    margin-left: 302px;
+}
+.footer-top-shopping dl {
+    float: left;
+    width: 200px;
+}
+dl.last-dl {
+    width: 100px;
+}
+.footer-top-shopping dt,
+.coverage h3 {
+    height: 34px;
+    font: 400 16px/34px "microsoft yahei";
+}
+.footer-top-shopping dd {
+    line-height: 20px;
+}
+.coverage {
+    width: 186px;
+    height: 169px;
+    float: right;
+    margin-right: 60px;
+    padding-left: 17px;
+    background: url(../images/images/china.png) no-repeat left bottom;
+}
+.coverage p {
+    padding-top: 8px;
+}
+.coverage a {
+    float: right;
+}
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0 30px;
+    border-top: 1px solid #E5E5E5;
+}
+.footer-bottom-links a {
+    margin: 0 10px;
+}
+.footer-bottom-copyright {
+    padding: 10px 0;
+}
+.footer-bottom-img a {
+    margin: 0 5px;
+}
+/*footer end*/
